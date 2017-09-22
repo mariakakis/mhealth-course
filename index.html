@@ -2,38 +2,51 @@
 layout: default
 
 ---
-{% assign sorted_news = site.data.news | sort: 'date' | reverse %}
-
 <div class="row">
-  <div class="col-md-4 news">
-    <h2>News</h2>
-    <ul>
-    {% for news in sorted_news limit:5 %}
-      <li><div class="date">{{ news.date | date: '%B %d, %Y' }}:</div>
-        <div class="blurb">
-          {% if news.url == nil %}
-          {{ news.blurb }}
-          {% else %}
-          <a href="{{ news.url }}">{{ news.blurb }}</a>
-          {% endif %}
-          </div></li>
-    {% endfor %}
-    </ul>
-    <a href="{{site.base_url}}/news/">(More news...)</a>
+  <div class="col-xs-12">
+    <h2>Course Information</h2>
+    <table style="width: 100%;" border="0">
+      <tbody>
+      <tr>
+        <td><b>Instructors</b></td>
+        <td>Alex Mariakakis &amp; Edward Wang</td>
+      </tr>
+      <tr>
+        <td><b>Time</b></td>
+        <td>Tuesday, 6:00PM – 8:50PM (EEB 037)</td>
+      </tr>
+      <tr>
+        <td><b>Office Hours</b></td>
+        <td>Tuesday 5:30 to 6PM, EEB 037</td>
+      </tr>
+      <tr>
+        <td><b>Instructors Emails'</b></td>
+        <td><a href="mailto:atm15@cs.washington.edu">atm15@cs.washington.edu</a>, <a href="mailto:ejaywang@uw.edu ">ejaywang@uw.edu</a></td>
+      </tr>
+      <tr>
+      <td><b>Teaching Assistant</b></td>
+        <td>Eric Whitmire, <a href="mailto:emwhit@cs.washington.edu">emwhit@cs.washington.edu</a></td>
+      </tr>
+      <tr>
+        <td><b>TA Office Hours</b></td>
+        <td>Tuesday 5:30 to 6PM, EEB 037</td>
+      </tr>
+      </tbody>
+    </table>
   </div>
 </div>
 
 <div class="row">
   <div class="col-xs-12">
-    I'm a fourth year PhD student studying <a href="http://www.cs.washington.edu/">Computer Science and Engineering</a> at the University of Washington. I am advised by <a href="https://homes.cs.washington.edu/~shwetak/">Shwetak Patel</a> in the Ubiquitous Computing (<a href="https://ubicomplab.cs.washington.edu/">UbiComp</a>) lab and <a href="http://faculty.washington.edu/wobbrock/">Jacob O. Wobbrock</a> in the Mobile + Accessible Design (<a href="http://depts.washington.edu/madlab/">MAD</a>) Lab. My dissertation is on creating smartphone apps that systematize and automate the ways that doctors use their senses - sight, hearing, touch, smell, and taste - to detect symptoms more accurately, precisely, and consistently. My graduate work has focused on diagnosing conditions that manifest through symptoms in the eye, including jaundice for pancreatic cancer and non-responsive pupils for traumatic brain injuries. My projects cover a wide array of skills, including machine learning, computer vision, signal processing, and user interface design.
+    <h2>Course Description</h2>
+    The aim of this class will be to introduce the students to ubiquitous computing. We will focus on how traditional topics of computing have evolved to support the vision of a connected, portable, and a human-centric computing environment. The course will include discussion into contribution of various fields, including human-computer interaction, embedded computing, computer vision, distributed systems, machine learning, and electrical engineering. The students will gain practical experience in developing sensing systems in different application domains, such as activity recognition, health sensing, gestural interaction, etc.
 
-    I completed my undergraduate studies at Duke University with a double major in <a href="http://ece.duke.edu/">Electrical Engineering</a> and <a href="http://www.cs.duke.edu/">Computer Science</a>. Through the <a href="http://pratt.duke.edu/undergrad/students/research-independent-study/research-fellows">Pratt Fellows</a> program, I had the opportunity to research in the Systems Networking Research Group (<a href="http://synrg.csl.illinois.edu/">SyNRG</a>) led by <a href="http://croy.web.engr.illinois.edu/">Romit Roy Choudhury</a>.
-  </div>
-</div>
+    The course will be a combination of lectures, tutorials, class discussions, and demonstrations. Students will be evaluated on their class participation, reading summaries, and individual assignments/mini-projects (5 assignments in total).
 
-<div class="row">
-  <div class="col-xs-12">
-    <h2>Contact Info</h2>
-    <b>Email:</b> atm15 at cs dot washington dot edu
+    There are no pre-requisites for the course.
+
+    This class is intended to be highly interactive and students will be asked to kick off the discussion for that day’s topic based on the assigned readings. Prior to class, all students are required to post a paragraph summary of the reading(s) and questions or discussion points to the message board. The highlighted papers on the schedule are the required papers, but additional optional papers are also listed that you can use for reference either in this class or in the future.
+
+    Lectures and discussion will occur during the first half of classtime and the second half will consist of tutorials on how to build and prototype various ubicomp systems. There will be 5 individual assignments to practice these concepts. Although not required, you are allowed to work in groups to learn the material, but are required to complete and submit individual work.
   </div>
 </div>
