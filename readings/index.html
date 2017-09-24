@@ -1,0 +1,36 @@
+---
+layout: page
+title: 
+redirect_from:
+- /readings/
+---
+<div class="row">
+	<div class="col-xs-12">
+		<h2>Readings</h2>
+		{% capture class_date %}0{% endcapture %}
+		{% assign sorted_lectures = site.lectures | sort: 'number' %}
+
+		<table style="width: 100%;" border="0">
+			<tbody>
+				{% for lecture in sorted_lectures %}
+					<tr>
+						<td><b>{{ class_date }}</b></td>
+						<td>
+						{{ lecture.title }}
+						<ul>
+						{% for paper in lecture.papers %}
+							<li>
+								{% include author_list.html authors=paper.authors %}. 
+								<u><a href="{{ paper.url }}">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
+							</li>
+						{% endfor %}
+						</ul>
+						</td>
+					</tr>
+
+
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</div>

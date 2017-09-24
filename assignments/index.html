@@ -1,0 +1,16 @@
+---
+layout: page
+title: 
+redirect_from:
+- /homework/
+---
+
+<h1>Assignments</h1>
+{% assign sorted_assignments = site.assignments | sort: 'title' %}
+
+{% for assignment in sorted_assignments %}      
+
+<h2>{{ assignment.title }}</h2>
+<p>{{ assignment.summary }}</p>
+
+{% endfor %}
