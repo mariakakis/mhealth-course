@@ -11,6 +11,13 @@ redirect_from:
 		{% assign sorted_readings = site.readings | sort: 'number' %}
 
 		<table style="width: 100%;" border="0">
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Discussion Topic and Readings</th>
+					<th>Assignments</th>
+				</tr>
+			</thead>
 			<tbody>
 				{% for readings in sorted_readings %}
 					<tr>
