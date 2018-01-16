@@ -8,27 +8,37 @@ redirect_from:
 	<div class="col-xs-12">
 		<h2>Readings</h2>
 		{% capture class_date %}0{% endcapture %}
-		{% assign sorted_lectures = site.lectures | sort: 'number' %}
+		{% assign sorted_readings = site.readings | sort: 'number' %}
 
 		<table style="width: 100%;" border="0">
 			<tbody>
-				{% for lecture in sorted_lectures %}
+				{% for readings in sorted_readings %}
 					<tr>
 						<td><b>{{ class_date }}</b></td>
 						<td>
-						{{ lecture.title }}
+						{{ readings.title }}
 						<ul>
-						{% for paper in lecture.papers %}
+						{% for paper in readings.papers %}
+							{% if paper.required == true %}
 							<li>
-								{% include author_list.html authors=paper.authors %}. 
+								{% include author_list.html authors=paper.authors %}.
 								<u><a href="{{ paper.url }}">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
 							</li>
+							{% endif %}
+						{% endfor %}
+						{% for paper in readings.papers %}
+							{% if paper.required == false %}
+							<li>
+								<i>Optional:
+								{% include author_list.html authors=paper.authors %}.
+								<u><a href="{{ paper.url }}">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
+								</i>
+							</li>
+							{% endif %}
 						{% endfor %}
 						</ul>
 						</td>
 					</tr>
-
-
 				{% endfor %}
 			</tbody>
 		</table>
