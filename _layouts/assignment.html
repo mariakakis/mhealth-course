@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="page assignment">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.summary }}</p>
+
+  {% if page.optional.size > 0 %}
+  <h2>Optional:</h2> 
+  {{ page.optional }}
+  {% endif %}
+
+  <h2>Grading:</h2>
+  {{ page.grading }}
+
+  <h2>Deliverables:</h2>
+  <p>{{ page.deliverables }}</p>
+    
+</article>
