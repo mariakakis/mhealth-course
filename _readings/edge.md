@@ -1,6 +1,6 @@
 ---
 title: 'Edge Computing'
-number: 8
+due_class_index: 9
 papers:
 - title: 'TODO'
   authors: [TODO]

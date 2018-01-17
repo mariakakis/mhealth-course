@@ -1,6 +1,6 @@
 ---
 title: 'Smart Homes'
-number: 4
+due_class_index: 4
 papers:
 - title: 'ElectriSense: Single-Point Sensing Using EMI for Electrical Event Detection and Classification in the Home'
   authors: [Sidhant Gupta, Matthew Reynolds, Shwetak Patel]

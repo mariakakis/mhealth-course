@@ -6,48 +6,75 @@ redirect_from:
 ---
 <div class="row">
 	<div class="col-xs-12">
-		<h2>Readings</h2>
-		{% capture class_date %}0{% endcapture %}
-		{% assign sorted_readings = site.readings | sort: 'number' %}
+<h2>Readings</h2>
+<!-- Course timing -->
+{% include course_dates.html %}
 
-		<table style="width: 100%;" border="0">
-			<thead>
-				<tr>
-					<th>Date</th>
-					<th>Discussion Topic and Readings</th>
-					<th>Assignments</th>
-				</tr>
-			</thead>
-			<tbody>
-				{% for readings in sorted_readings %}
-					<tr>
-						<td><b>{{ class_date }}</b></td>
-						<td>
-						{{ readings.title }}
-						<ul>
-						{% for paper in readings.papers %}
-							{% if paper.required == true %}
-							<li>
-								{% include author_list.html authors=paper.authors %}.
-								<u><a href="{{ paper.url }}">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
-							</li>
-							{% endif %}
-						{% endfor %}
-						{% for paper in readings.papers %}
-							{% if paper.required == false %}
-							<li>
-								<i>Optional:
-								{% include author_list.html authors=paper.authors %}.
-								<u><a href="{{ paper.url }}">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
-								</i>
-							</li>
-							{% endif %}
-						{% endfor %}
-						</ul>
-						</td>
-					</tr>
+{% assign sorted_readings = site.readings | sort: 'due_class_index' %}
+
+<table style="width: 100%;" border="0">
+	<thead>
+		<tr>
+			<th><b>Date</b></th>
+			<th><b>Discussion Topic, Readings, and/or Videos</b></th>
+			<th><b>Assignments</b></th>
+		</tr>
+	</thead>
+	<tbody>
+		{% for i in (0..class_date_list.size) %}
+			<tr>
+				<!-- Date -->
+				<td>{{ class_date_list[i] }}</td>
+				
+				<!-- Current readings -->
+				<td>
+				{% assign curr_readings = "" %}
+				{% for readings in site.readings %}
+					{% if readings.due_class_index == i %}
+						{% assign curr_readings = readings %}
+						{% break %}
+					{% endif %}
 				{% endfor %}
-			</tbody>
-		</table>
+				{{ curr_readings.title }}
+				<ul>
+				{% for paper in curr_readings.papers %}
+					{% if paper.required == true %}
+					<li>
+						{% include author_list.html authors=paper.authors %}.
+						<u><a href="{{ paper.url }}">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
+					</li>
+					{% endif %}
+				{% endfor %}
+				{% for paper in curr_readings.papers %}
+					{% if paper.required == false %}
+					<li>
+						<i>Optional:
+						{% include author_list.html authors=paper.authors %}.
+						<u><a href="{{ paper.url }}">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
+						</i>
+					</li>
+					{% endif %} 
+				{% endfor %}
+				</ul>
+				</td>
+				
+				<td>
+				<!-- Due assignments -->
+				{% for assignment in site.assignments %}
+					{% if assignment.due_class_index == i %}
+						<p>{{ assignment.nickname }} due <br />
+					{% endif %}
+				{% endfor %}
+				<!-- New assignments -->
+				{% for assignment in site.assignments %}
+					{% if assignment.assigned_class_index == i %}
+						{{ assignment.nickname }} assigned <br />
+					{% endif %}
+				{% endfor %}
+				</td>
+			</tr>
+		{% endfor %}
+	</tbody>
+</table>
 	</div>
 </div>

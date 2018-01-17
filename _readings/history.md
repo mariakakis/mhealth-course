@@ -1,6 +1,6 @@
 ---
 title: 'History of UbiComp'
-number: 1
+due_class_index: 1
 papers:
 - title: 'Charting Past, Present, and Future Research in Ubiquitous Computing'
   authors: [Gregory Abowd, Elizabeth Mynatt]

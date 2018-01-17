@@ -1,6 +1,6 @@
 ---
 title: 'Wearables'
-number: 7
+due_class_index: 8
 papers:
 - title: 'Glabella: Continuously Sensing Blood Pressure Behavior using an Unobtrusive Wearable Device'
   authors: [Christian Holz and Edward Wang]

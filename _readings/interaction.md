@@ -1,6 +1,6 @@
 ---
 title: 'Novel Interaction'
-number: 2
+due_class_index: 2
 papers:
 - title: 'Soli: Ubiquitous Gesture Sensing with Millimeter Wave Radar'
   authors: [Jaime Lien, Nicholas Gillian, M. Emre Karagozler, Patrick Amihood, Carsten Schwesig, Erik Olson, Hakim Raja, Ivan Poupyrev]

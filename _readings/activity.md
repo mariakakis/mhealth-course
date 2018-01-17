@@ -1,6 +1,6 @@
 ---
 title: 'Activity Tracking'
-number: 3
+due_class_index: 3
 papers:
 - title: 'A Long-Term Evaluation of Sensing Modalities for Activity Recognition'
   authors: [Beth Logan, Jennifer Healey, Matthai Philipose, Emmanuel Munguia Tapia, and Stephen Intille]
