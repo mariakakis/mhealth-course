@@ -17,6 +17,14 @@ email: atm15@cs.washington.edu
 collections:
   readings:
   assignments:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: assignments
+    values:
+      layout: assignment
 
 #
 # Flags below are optional

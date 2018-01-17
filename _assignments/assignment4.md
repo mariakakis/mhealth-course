@@ -4,5 +4,9 @@ nickname: 'A4'
 assigned_class_index: 6
 due_class_index: 8
 summary: |
-    You will create a 3D model for a case (and print it out) that will house the sensor and microcontroller for A5. In A5, you’ll build a bluetooth-enabled wearable heart rate monitor using the parts we provide you. To get the best heart rate signal, you will need a way to securely attach the sensor and microcontroller on your finger. Your task will be to design some sort of housing that will hold the sensor, the microcontroller, and the batteries as well as attach to your finger. You will turn in your actual print out when you submit A5, but we ask you submit your 3D model (in STL format) as indicate on the schedule. This gives you some time to tweak the design (if needed) after you start working on A5 and prior to actually printing the part. Submit your assignment on the assignment submission site.
+    You will create a 3D model for a case that will house your PSoC for Assignment 5. Assignment 5 will be like the gesture detector in Assignment 5, only that the data collection will happen on the PSoC. With that in mind, you will want to build something that will mount the PSoC on your hand, wrist, or arm. If you would are inspired to make something that would mount the PSoC somewhere else on your body (e.g., ankle, forehad), it is fine as long as you ask us ahead of time. You are only required to give us the STL file; we will deal with printing the object itself. Depending on resources, all prints may not be finished until Assignment 5 is due.
+grading: |
+    (100 points) We will sanity check your model to make sure that it is feasible to print and reasonable in size. -5 for each minor mistake that requires a fix. -10 for each major mistake. -20 if the model cannot be printed.
+deliverables: |
+    STL file: TODO LINK
 ---

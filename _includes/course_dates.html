@@ -3,8 +3,8 @@
 {% assign end_date = "2018-6-8" %}
 {% assign on_sun = false %}
 {% assign on_mon = false %}
-{% assign on_tue = true %}
-{% assign on_wed = false %}
+{% assign on_tue = false %}
+{% assign on_wed = true %}
 {% assign on_thu = false %}
 {% assign on_fri = false %}
 {% assign on_sat = false %}
@@ -36,4 +36,3 @@
 {% endfor %}
 {% endcapture %}
 {% assign class_date_list = class_date_list_string | split:',' %}
-{{class_date_list}}

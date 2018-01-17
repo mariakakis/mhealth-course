@@ -4,5 +4,13 @@ nickname: 'A3'
 assigned_class_index: 4
 due_class_index: 6
 summary: |
-    You will be given a low-cost SDR module for the quarter, which you will us for this assignment. Your task will be to use GNU Radio and the SDR hardware to decode some RF signals. Obviously, you will be limited to RF signals that operate within the frequency limits of the current SDR hardware. We are providing everyone with 315 MHz garage door remotes as one option for something to decode. These remotes have 4 buttons and your task will be to decode each of the four buttons when pressed. You will use GNU Radio to stream the filtered signal to a file sink, where you will use the programming language of your choice to decode the signal (python, C, C++, java, etc). We suggest you first decode the signal using post processing and then attempt to decode it in real time. For this assignment, it is sufficient to decode a button press in semi real time – a few second delay is totally fine. Either on a graphical user interface or in the command line, it should show which button is being pressed (button 1, 2, 3 or 4). We ask you submit the following materials for this assignment – the GRC file (if modified from the example), the decoding source code, and a demo video showing buttons being pressed and it being reflected on the screen. We suggest you start with the garage door remote, but if you are confident with this assignment we will allow you the flexibility to decode something else that is of interest to you. This could be a wireless mouse, some proprietary hub, etc. If you decide not to use the remote, please send us an email first. Submit your assignment to the assignment submission site.
+    You will recreate your step counter from Assignment 1 on a PSoC. Your algorithm can be the exact same as it was before (assuming it worked well). Like before, you can assume that the PSoC is in a fixed position in your hand.
+optional: |
+    Attempt to detect steps in any orientation and posture.
+grading: |
+    (60 points) We will briefly examine your code to ensure that you are using some form of signal processing to calculate a step count. <br/>
+    (40 points) You will take 20 steps with the PSoC in your hand during class. For full credit, your app must correctly count the number of steps within 1 (19-21 steps). -5 points for each extra or missing step beyond the first.
+deliverables: |
+    Source code: TODO LINK<br/>
+    Demo in class
 ---
