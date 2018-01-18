@@ -1,4 +1,5 @@
-{% capture class_date_list_string %}
+{% comment %} this introduces lots of whitespace for each entry and an extra entry, handling within page right now {% endcomment %}
+
 {% assign start_date = "2018-3-26" %}
 {% assign end_date = "2018-6-8" %}
 {% assign on_sun = false %}
@@ -9,31 +10,31 @@
 {% assign on_fri = false %}
 {% assign on_sat = false %}
 {% assign curr_date = start_date %}
+
+{% capture class_date_list_string %}
 {% for i in (1..180) %}
-	{% assign next_unix = curr_date | date: "%s" | plus: 86400 %}
-	{% assign next_date = next_unix | date: "%a %h %d %Y" %}
-	{% assign next_date_split = next_date | split:&nbsp; %}
-	{% assign end_unix = end_date | date: "%s" | plus: 0 %}
-	{% if next_unix > end_unix %}
-		{% break %}
-	{% endif %}
-	{% if (next_date_split[0] == 'Sun' and on_sun) %}
-		{{ next_date }},
-	{% elsif (next_date_split[0] == 'Mon' and on_mon) %}
-		{{ next_date }},
-	{% elsif (next_date_split[0] == 'Tue' and on_tue) %}
-		{{ next_date }},
-	{% elsif (next_date_split[0] == 'Wed' and on_wed) %}
-		{{ next_date }},
-	{% elsif (next_date_split[0] == 'Thu' and on_thu) %}
-		{{ next_date }},
-	{% elsif (next_date_split[0] == 'Fri' and on_fri) %}
-		{{ next_date }},
-	{% elsif (next_date_split[0] == 'Sat' and on_sat) %}
-		{{ next_date }},
-	{% endif %}
-	{% assign curr_date = next_unix %}
+{% assign next_unix = curr_date | date: "%s" | plus: 86400 %}
+{% assign next_date = next_unix | date: "%a %h %d, %Y" %}
+{% assign next_date_split = next_date | split:&nbsp; %}
+{% assign end_unix = end_date | date: "%s" | plus: 0 %}
+{% if next_unix > end_unix %} {% break %} {% endif %}
+{% if (next_date_split[0] == 'Sun' and on_sun) %}
+{{ next_date }};
+{% elsif (next_date_split[0] == 'Mon' and on_mon) %}
+{{ next_date }};
+{% elsif (next_date_split[0] == 'Tue' and on_tue) %}
+{{ next_date }};
+{% elsif (next_date_split[0] == 'Wed' and on_wed) %}
+{{ next_date }};
+{% elsif (next_date_split[0] == 'Thu' and on_thu) %}
+{{ next_date }};
+{% elsif (next_date_split[0] == 'Fri' and on_fri) %}
+{{ next_date }};
+{% elsif (next_date_split[0] == 'Sat' and on_sat) %}
+{{ next_date }};
+{% endif %}
+{% assign curr_date = next_unix %}
 {% endfor %}
 {% endcapture %}
-{% assign class_date_list = class_date_list_string | split:',' %}
-{{ class_date_list.size }}
+{% assign class_date_list = class_date_list_string | split:';' %}
+{% assign num_classes = class_date_list.size | plus:0 %}

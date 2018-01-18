@@ -22,9 +22,11 @@ redirect_from:
 	</thead>
 	<tbody>
 		{% for i in (0..class_date_list.size) %}
+			{% assign date = class_date_list[i] | strip %}
+			{% if date.size > 0 %}
 			<tr>
 				<!-- Date -->
-				<td>{{ class_date_list[i] }}</td>
+				<td>{{ date }}</td>
 				
 				<!-- Current readings -->
 				<td>
@@ -73,6 +75,7 @@ redirect_from:
 				{% endfor %}
 				</td>
 			</tr>
+			{% endif %}
 		{% endfor %}
 	</tbody>
 </table>
