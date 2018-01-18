@@ -11,7 +11,6 @@ papers:
   authors: [Mark Weiser]
   url: https://www.cs.cmu.edu/~jasonh/courses/ubicomp-sp2007/papers/02-weiser-computer-21st-century.pdf
   venue: Scientific American, September 1991
-  required: false
 ---
 <!-- - title: 'The Coming Age of Calm Technology'
   authors: [Mark Weiser]

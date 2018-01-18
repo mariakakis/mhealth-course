@@ -11,7 +11,6 @@ papers:
   authors: [Chouchang 'Jack' Yang, Alanson P. Sample]
   url: http://www.alansonsample.com/publications/docs/2017%20-%20IMWUT%20-%20EM-Comm.pdf
   venue: UbiComp 2017
-  required: false
 ---
 <!-- - title: 'Sifting Through the Airwaves: Efficient and Scalable Multiband RF Harvesting'
   authors: [Aaron Parks, Joshua Smith]

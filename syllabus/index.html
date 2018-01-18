@@ -40,22 +40,20 @@ redirect_from:
 				{{ curr_readings.title }}
 				<ul>
 				{% for paper in curr_readings.papers %}
-					{% if paper.required == true %}
 					<li>
+						{% if paper.required != true and paper.video %}
+							<i>Optional Video:
+						{% elsif paper.required != true %}
+							<i>Optional:
+						{% elsif paper.video %}
+							Video:
+						{% endif %}
 						{% include author_list.html authors=paper.authors %}.
-						<u><a href="{{ paper.url }}">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
-					</li>
-					{% endif %}
-				{% endfor %}
-				{% for paper in curr_readings.papers %}
-					{% if paper.required == false %}
-					<li>
-						<i>Optional:
-						{% include author_list.html authors=paper.authors %}.
-						<u><a href="{{ paper.url }}">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
+						<u><a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
+						{% if paper.required != true %}
 						</i>
+						{% endif %}
 					</li>
-					{% endif %} 
 				{% endfor %}
 				</ul>
 				</td>
@@ -64,13 +62,13 @@ redirect_from:
 				<!-- Due assignments -->
 				{% for assignment in site.assignments %}
 					{% if assignment.due_class_index == i %}
-						<a href="{{ assignment.url }}">{{ assignment.nickname }}</a> due <br />
+						<a href="{{ site.baseurl }}{{ assignment.url }}">{{ assignment.nickname }}</a> due <br />
 					{% endif %}
 				{% endfor %}
 				<!-- New assignments -->
 				{% for assignment in site.assignments %}
 					{% if assignment.assigned_class_index == i %}
-						<a href="{{ assignment.url }}">{{ assignment.nickname }}</a> assigned <br />
+						<a href="{{ site.baseurl }}{{ assignment.url }}">{{ assignment.nickname }}</a> assigned <br />
 					{% endif %}
 				{% endfor %}
 				</td>

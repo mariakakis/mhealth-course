@@ -11,7 +11,6 @@ papers:
   authors: [Matthai Philipose, Kenneth P. Fishkin, and Mike Perkowitz, Donald J. Patterson, Dieter Fox, Henry Kautz, Dirk Hahnel]
   url: https://ftp.cs.rochester.edu/u/kautz/papers/pervasive_proact_final.pdf
   venue: PerCom 2004
-  required: false
 ---
 <!-- - title: 'Ensembles of Multiple Sensors for Human Energy Expenditure Estimation'
   authors: [Hristijan Gjoreski, Bostjan Kaluza, Matjaz Gams, Radoje Milic, Mitja Lustrek]

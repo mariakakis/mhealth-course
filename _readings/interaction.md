@@ -11,7 +11,6 @@ papers:
   authors: [Yang Zhang, Chris Harrison]
   url: http://yang-zhang.me/research/Tomo/Tomo.pdf
   venue: UIST 2015
-  required: false
 ---
 <!-- - title: 'Interacting with Small Devices in Big Ways'
   authors: [Chris Harrison]

@@ -11,5 +11,4 @@ papers:
   authors: [TODO]
   url: google.com
   venue: TODO
-  required: false
 ---

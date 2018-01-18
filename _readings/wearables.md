@@ -11,5 +11,4 @@ papers:
   authors: [Enrico Tanuwidjaja, Derek Huynh, Kirsten Koa, Calvin Nguyen, Churen Shao, Patrick Torbett, Colleen Emmenegger, Nadir Weibel]
   url: http://chroma-glass.ucsd.edu/ubicomp2014_chroma.pdf
   venue: UbiComp 2014
-  required: false
 ---
