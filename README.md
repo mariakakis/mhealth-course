@@ -5,8 +5,7 @@
 The BibTeX and citation should be copied verbatim from the ACM DL, if possible.
 Thumbnail pictures should be 16x9, at least 300 px wide.
 
-## Updating profile
-#### Edit Metadata
+## Changing Course Dates
 Modify `_data/members.yml`. 
 Fields:
 - `id`: This should be your last name. This is what you'll use throughout the site to refer to you. If you have a website listed, it will replace references of your name with a link to your website.
@@ -16,10 +15,10 @@ Fields:
 - `affiliation`: Either EE or CSE. See _data/affiliations.yml.
 - `status`: One of `current`, `alumni`, `master_alumni`, `ugrad_alumni`, or `summer_alumni`
 
-#### Upload image
-Images should be uploaded to `images/members/`. Images should be square and (ideally) 165x165px. If you upload something else, it will be cropped.
+## Changing Readings
+Something
 
-## Adding Publication
+## Changing Assignments
 Create a new file in `_publications/`. I recommend copying an existing file (such as `eyecontact.md`).
 
 - `authors`: This should be a list of full names. If an author is a lab member (or former lab member), use the member's `id` instead of their name to link it to their website.
