@@ -16,6 +16,7 @@ email: atm15@cs.washington.edu
 
 collections:
   readings:
+  lectures:
   assignments:
     output: true
 

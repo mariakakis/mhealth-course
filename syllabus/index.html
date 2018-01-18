@@ -17,6 +17,7 @@ redirect_from:
 		<tr>
 			<th><b>Date</b></th>
 			<th><b>Discussion Topic, Readings, and/or Videos</b></th>
+			<th><b>Lectures</b></th>
 			<th><b>Assignments</b></th>
 		</tr>
 	</thead>
@@ -56,6 +57,15 @@ redirect_from:
 					</li>
 				{% endfor %}
 				</ul>
+				</td>
+
+				<!-- Lectures -->
+				<td>
+				{% for lecture in site.lectures %}
+					{% if lecture.class_index == i %}
+						<a href="{{ lecture.link }}">{{ lecture.title }}</a><br/>
+					{% endif %}
+				{% endfor %}
 				</td>
 				
 				<td>
