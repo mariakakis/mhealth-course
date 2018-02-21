@@ -1,5 +1,5 @@
 ---
 title: 'Machine Learning'
-link: 'https://www.dropbox.com/s/riobvfwegnfld6v/DUI_presentation.pptx?dl=0'
+link: '/slides/ML_overview.pptx'
 class_index: 2
 ---

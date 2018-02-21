@@ -1,5 +1,5 @@
 ---
 title: 'What is UbiComp?'
-link: 'https://www.dropbox.com/s/riobvfwegnfld6v/DUI_presentation.pptx?dl=0'
+link: '/slides/intro.pptx'
 class_index: 0
 ---

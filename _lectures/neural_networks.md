@@ -1,5 +1,5 @@
 ---
 title: 'Neural Networks'
-link: 'https://www.dropbox.com/s/riobvfwegnfld6v/DUI_presentation.pptx?dl=0'
+link: '/slides/NN_overview.pptx'
 class_index: 3
 ---
