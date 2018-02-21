@@ -1,5 +1,5 @@
 ---
 title: 'What is UbiComp?'
-link: '/slides/intro.pptx'
+link: /slides/intro.pptx
 class_index: 0
 ---

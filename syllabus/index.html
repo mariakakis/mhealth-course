@@ -63,7 +63,7 @@ redirect_from:
 				<td>
 				{% for lecture in site.lectures %}
 					{% if lecture.class_index == i %}
-						<a href="{{ lecture.link }}">{{ lecture.title }}</a><br/>
+						<a href="{{ site.url }}{{ lecture.link }}">{{ lecture.title }}</a><br/>
 					{% endif %}
 				{% endfor %}
 				</td>
