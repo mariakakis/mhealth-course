@@ -13,11 +13,17 @@ redirect_from:
 {% assign sorted_readings = site.readings | sort: 'due_class_index' %}
 
 <table style="width: 100%;" border="0">
+	<colgroup>
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 50%;">
+       <col span="1" style="width: 20%;">
+       <col span="1" style="width: 15%;">
+    </colgroup>
 	<thead>
 		<tr>
 			<th><b>Date</b></th>
 			<th><b>Discussion Topic, Readings, and/or Videos</b></th>
-			<th><b>Lectures</b></th>
+			<th><b>Lectures and Tutorials</b></th>
 			<th><b>Assignments</b></th>
 		</tr>
 	</thead>
