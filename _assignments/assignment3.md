@@ -1,15 +1,15 @@
 ---
-title: 'Assignment 3 - Step Counting on a PSoC'
+title: 'Assignment 3 - Step Counting on an Arduino'
 nickname: 'A3'
 assigned_class_index: 4
 due_class_index: 6
 summary: |
-    You will recreate your step counter from Assignment 1 on a PSoC. Your algorithm can be the exact same as it was before (assuming it worked well). Like before, you can assume that the PSoC is in a fixed position in your hand.
+    You will recreate your step counter from Assignment 1 on a Arduino. Your algorithm can be the exact same as it was before (assuming it worked well). Like before, you can assume that the Arduino is in a fixed position in your hand.
 optional: |
     Attempt to detect steps in any orientation and posture.
 grading: |
     (60 points) We will briefly examine your code to ensure that you are using some form of signal processing to calculate a step count. <br/>
-    (40 points) You will take 20 steps with the PSoC in your hand during class. For full credit, your app must correctly count the number of steps within 1 (19-21 steps). -5 points for each extra or missing step beyond the first.
+    (40 points) You will take 20 steps with the Arduino in your hand during class. For full credit, your app must correctly count the number of steps within 1 (19-21 steps). -5 points for each extra or missing step beyond the first.
 deliverables: |
     Source code: TODO LINK<br/>
     Demo in class
