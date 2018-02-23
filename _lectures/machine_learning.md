@@ -1,5 +1,5 @@
 ---
 title: 'Machine Learning'
-link: /slides/ML_overview.pptx
+link: /slides/EE590_MachineLearning.pptx
 class_index: 2
 ---
