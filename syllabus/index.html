@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title:
 redirect_from:
 - /readings/
 ---
@@ -34,7 +34,7 @@ redirect_from:
 			<tr>
 				<!-- Date -->
 				<td>{{ date }}</td>
-				
+
 				<!-- Current readings -->
 				<td>
 				{% assign curr_readings = "" %}
@@ -44,25 +44,31 @@ redirect_from:
 						{% break %}
 					{% endif %}
 				{% endfor %}
-				{{ curr_readings.title }}
+				{% assign required_readings = curr_readings.papers | where:"required",true %}
+				{% assign optional_readings = curr_readings.papers | where_exp:"item","item.required != true" %}
+				<b>{{ curr_readings.title }}</b><br/><br/>
+
+				{% if required_readings.size > 0 %}
+				Required:
 				<ul>
-				{% for paper in curr_readings.papers %}
+				{% for paper in required_readings %}
 					<li>
-						{% if paper.required != true and paper.video %}
-							<i>Optional Video:
-						{% elsif paper.required != true %}
-							<i>Optional:
-						{% elsif paper.video %}
-							Video:
-						{% endif %}
-						{% include author_list.html authors=paper.authors %}.
-						<u><a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a></u>{% if paper.venue.size > 0 %}, {{ paper.venue }} {% endif %}
-						{% if paper.required != true %}
-						</i>
-						{% endif %}
+						{% include citation.html paper=paper %}
 					</li>
 				{% endfor %}
 				</ul>
+				{% endif %}
+
+				{% if optional_readings.size > 0 %}
+				Optional:
+				<ul>
+				{% for paper in optional_readings %}
+					<li>
+							{% include citation.html paper=paper %}
+					</li>
+				{% endfor %}
+				</ul>
+				{% endif %}
 				</td>
 
 				<!-- Lectures -->
@@ -73,7 +79,7 @@ redirect_from:
 					{% endif %}
 				{% endfor %}
 				</td>
-				
+
 				<td>
 				<!-- Due assignments -->
 				{% for assignment in site.assignments %}
