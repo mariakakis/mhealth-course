@@ -1,8 +1,8 @@
 ---
 title: 'Assignment 1 - Step Counting on an Android Phone'
 nickname: 'A1'
-assigned_class_index: 0
-due_class_index: 2
+assigned_class_index: 1
+due_class_index: 3
 summary: |
     You will build your first Android app that uses the built-in sensors for something useful. This app will count the number of steps that you have taken and show that number on the screen. You will be using the raw data from the accelerometer and/or gyroscope to complete this task. The data will require some very simple signal processing. You can use peak detection, zero crossing, or your own technique for counting. You can assume the user only holds the phone in a fixed posture in their hands. You are welcome to assume a different placement or posture of the phone, but please be sure to document how the device needs to be held somewhere on the interface.
 optional: |

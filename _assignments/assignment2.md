@@ -1,8 +1,8 @@
 ---
 title: 'Assignment 2 - Gesture Recognition on an Android Phone'
 nickname: 'A2'
-assigned_class_index: 2
-due_class_index: 4
+assigned_class_index: 3
+due_class_index: 5
 summary: |
     You will build an Android app that uses the accelerometer and/or gyroscope to disgtinguish between 3 different hand gestures when the phone is held facing up in your hand: (1) palm up-to-palm down, (2) palm down-to-palm up, (3) pushing the phone away from your body. You could easily distinguish between these gestures using signal processing and heuristics like in Assignment 1; however, we want you to use machine learning this time around. Here is the step-by-step plan that you will likely want to follow:
     <ol>

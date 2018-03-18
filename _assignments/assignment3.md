@@ -1,8 +1,8 @@
 ---
 title: 'Assignment 3 - Step Counting on an Arduino'
 nickname: 'A3'
-assigned_class_index: 4
-due_class_index: 6
+assigned_class_index: 5
+due_class_index: 7
 summary: |
     You will recreate your step counter from Assignment 1 on a Arduino. Your algorithm can be the exact same as it was before (assuming it worked well). Like before, you can assume that the Arduino is in a fixed position in your hand.
 optional: |
