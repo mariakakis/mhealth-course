@@ -1,5 +1,5 @@
 ---
-title: 'Low Power Sensing'
+title: 'Low-Power Sensing'
 due_class_index: 6
 papers:
 - title: 'Energy-efficient computing for wildlife tracking: design tradeoffs and early experiences with ZebraNet'
