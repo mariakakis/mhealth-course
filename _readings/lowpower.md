@@ -4,7 +4,7 @@ due_class_index: 6
 papers:
 - title: 'Energy-efficient computing for wildlife tracking: design tradeoffs and early experiences with ZebraNet'
   authors: [Philo Juang, Hidekazu Oki, Yong Wang, Margaret Martonosi, Li-Shiuan Peh, Daniel Rubenstein]
-  url: http://www.academia.edu/download/1901046/17mr609mkgt2af4.pdf
+  url: http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15740-f03/public/suggested_papers/sensors/zebranet_asplos02.pdf
   venue: ASPLOS 2002
   required: true
 - title: 'EM-Comm: Touch-based Communication via Modulated Electromagnetic Emissions'
