@@ -9,7 +9,7 @@ papers:
   required: true
 - title: 'Video: Monitoring our health the way we monitor the weather'
   authors: [Edward Wang]
-  url: https://www.youtube.com/watch?v=s_NizfAPcUM&t=2s
+  url: https://www.youtube.com/watch?v=s_NizfAPcUM
   venue: TEDxSanJuanIsland
   required: true
 ---
