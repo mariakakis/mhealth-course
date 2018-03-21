@@ -11,6 +11,11 @@ layout: default
   {{ page.optional }}
   {% endif %}
 
+  {% if page.starting_materials.size > 0 %}
+  <h2>Starting Materials:</h2> 
+  {{ page.starting_materials }}
+  {% endif %}  
+
   <h2>Grading:</h2>
   {{ page.grading }}
 

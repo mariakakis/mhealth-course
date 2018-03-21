@@ -15,7 +15,6 @@ summary: |
     	<li>anything else you would like to share.
     </ul>
 grading: |
-    For full credit, your post must include each of the items above.<br/>
     -5 per missing item
 deliverables: |
     Post on message board: <a href="https://canvas.uw.edu/courses/1131076/discussion_topics/4226635" target="_blank">link</a>
