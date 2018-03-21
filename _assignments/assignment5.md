@@ -1,5 +1,5 @@
 ---
-title: 'Assignment 5 – Gesture Recognition on an Android Phone with an Arduino Microcontroller'
+title: 'Assignment 5 – Gesture Recognition on an Android Phone with an Arduino'
 nickname: 'A5'
 assigned_class_index: 8
 due_class_index: 10

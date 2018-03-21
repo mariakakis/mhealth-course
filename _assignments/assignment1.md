@@ -11,6 +11,6 @@ grading: |
     (60 points) We will briefly examine your code to ensure that you are using some form of signal processing to calculate a step count. <br/>
     (40 points) To test your app's performance, you will take 20 steps with the phone in your hand during class. For full credit, your app must correctly count the number of steps within 1 (19-21 steps). -5 points for each extra or missing step beyond the first.
 deliverables: |
-    Source code: TODO LINK<br/>
+    Source code (.zip, .tar, or GitHub link): <a href="https://canvas.uw.edu/courses/1131076/assignments/4143491">link</a><br/>
     Demo in class
 ---
