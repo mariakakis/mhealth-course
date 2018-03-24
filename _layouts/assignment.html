@@ -6,18 +6,26 @@ layout: default
   <h1>{{ page.title }}</h1>
   <p>{{ page.summary }}</p>
 
-  {% if page.optional.size > 0 %}
-  <h2>Optional:</h2> 
-  {{ page.optional }}
+  <h2>Grading:</h2>
+  <ul>
+  {% for grade in page.grading %}
+    <li>{{ grade }}
+  {% endfor %}
+  </ul>
+
+  {% if page.extra_credit.size > 0 %}
+    <h2>Extra Credit:</h2>
+    <ul>
+    {% for grade in page.extra_credit %}
+      <li>{{ grade }}
+    {% endfor %}
+    </ul>
   {% endif %}
 
   {% if page.starting_materials.size > 0 %}
-  <h2>Starting Materials:</h2> 
-  {{ page.starting_materials }}
+    <h2>Starting Materials:</h2> 
+    {{ page.starting_materials }}
   {% endif %}  
-
-  <h2>Grading:</h2>
-  {{ page.grading }}
 
   <h2>Deliverables:</h2>
   <p>{{ page.deliverables }}</p>
