@@ -4,7 +4,7 @@ nickname: 'A3'
 assigned_class_index: 5
 due_class_index: 7
 summary: |
-    You will recreate your step counter from Assignment 1 on an Arduino. Your algorithm can be the exact same as it was before (assuming it worked well). Like before, you can assume that the Arduino is in a fixed position in your hand.
+    You will recreate your step counter from Assignment 1 on an Arduino. Your algorithm can be the exact same as it was before (assuming it worked well). Like before, you can assume that the Arduino is in a fixed position in your hand. The step count should be displayed in binary using the LEDs around the periphery of the device.
 grading:
 - (50 points) We will briefly examine your code to ensure that you are using some form of signal processing to calculate a step count.
 - (50 points) You will take 20 steps with the Arduino in your hand during class. -5 points for each extra or missing step.
