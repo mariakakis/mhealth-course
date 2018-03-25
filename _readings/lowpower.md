@@ -1,6 +1,6 @@
 ---
 title: 'Low-Power Sensing'
-due_class_index: 6
+due_class_index: 5
 papers:
 - title: 'Energy-efficient computing for wildlife tracking: design tradeoffs and early experiences with ZebraNet'
   authors: [Philo Juang, Hidekazu Oki, Yong Wang, Margaret Martonosi, Li-Shiuan Peh, Daniel Rubenstein]

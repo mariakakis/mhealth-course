@@ -1,6 +1,6 @@
 ---
 title: 'Health Sensing'
-due_class_index: 5
+due_class_index: 6
 papers:
 - title: 'BiliScreen: Using Mobile Phones to Monitor Newborn Jaundice'
   authors: [Alex Mariakakis, Megan A. Banks, Lauren Phillipi, Lei Yu, James A. Taylor, Shwetak N. Patel]

@@ -14,9 +14,9 @@ summary: |
 grading:
 - (50 points) We will briefly examine your code to ensure that you are using some form of machine learning to identify which gesture is being performed.
 - (50 points) You will perform each gesture 3 times with the phone in your hand. -5 points for each mistake.
-extra_credit:
+<!-- extra_credit:
 - (+up to 10 points) Come up with your own set of gestures that your model can distinguish. The more complicated the gestures are, the more points you can earn. You can extend the duration of the gesture recording for different gestures.
-- (+5 points) Your demo can work on both yourself and one of the instructors.
+- (+5 points) Your demo can work on both yourself and one of the instructors. -->
 starting_materials: TODO
 deliverables: |
     Source code (.zip, .tar, or GitHub link): <a href="https://canvas.uw.edu/courses/1131076/assignments/4143517" target="_blank">link</a><br/>
