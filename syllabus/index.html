@@ -75,7 +75,7 @@ redirect_from:
 				<td>
 				{% for lecture in site.lectures %}
 					{% if lecture.class_index == i %}
-						<a href="https://github.com/atm15/ubicomp-course/blob/master{{ lecture.link }}?raw=true">{{ lecture.title }}</a><br/>
+						<a href="{{ lecture.link }}">{{ lecture.title }}</a><br/>
 					{% endif %}
 				{% endfor %}
 				</td>

@@ -1,4 +1,0 @@
-slides/EE590_Intro.pptx filter=lfs diff=lfs merge=lfs -text
-slides/EE590_MachineLearning.pptx filter=lfs diff=lfs merge=lfs -text
-slides/EE590_NeuralNetworks.pptx filter=lfs diff=lfs merge=lfs -text
-slides/EE590_SignalProcessing.pptx filter=lfs diff=lfs merge=lfs -text
