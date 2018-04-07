@@ -11,7 +11,9 @@ grading:
 <!-- extra_credit:
 - (+5 points) Demonstrate that your step counter can work for any orientation (e.g., in hand face up, up against the ear). You can assume that the phone will stay in roughly the same orientation the whole time.
 - (+5 points) Your demo can work on both yourself and one of the instructors. -->
-starting_materials: <a href="https://github.com/atm15/Assignment1Starter" target="_blank">link</a>
+starting_materials: |
+    Starter code: <a href="https://github.com/atm15/Assignment1Starter" target="_blank">link</a><br/>
+    Instructions for setting up the Huawei Honor 4 phone: <a href="https://docs.google.com/presentation/d/1D8u7g2ZPk1vpMLQ_EQ_X6P_ygRz9F2eNxd6CcDQRdoo/edit?usp=sharing" target="_blank">link</a>
 deliverables: |
     Source code (.zip, .tar, or GitHub link): <a href="https://canvas.uw.edu/courses/1131076/assignments/4143491" target="_blank">link</a><br/>
     In-class demo
