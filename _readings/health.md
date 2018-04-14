@@ -4,7 +4,7 @@ due_class_index: 6
 papers:
 - title: 'BiliCam: Using Mobile Phones to Monitor Newborn Jaundice'
   authors: [Lilian de Greef, Mayank Goel, Min Joon Seo, Eric C. Larson, James W. Stout, James A. Taylor, Shwetak N. Patel]
-  url: https://ubicomplab.cs.washington.edu/pdfs/biliscreen.pdf
+  url: https://ubicomplab.cs.washington.edu/pdfs/bilicam.pdf
   venue: UbiComp 2014
   required: true
 - title: 'BiliScreen: Using Mobile Phones to Monitor Newborn Jaundice'
