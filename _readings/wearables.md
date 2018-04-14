@@ -2,15 +2,15 @@
 title: 'Wearables'
 due_class_index: 8
 papers:
-- title: 'Chroma: A Wearable Augmented-Reality Solution for Color Blindness'
-  authors: [Enrico Tanuwidjaja, Derek Huynh, Kirsten Koa, Calvin Nguyen, Churen Shao, Patrick Torbett, Colleen Emmenegger, Nadir Weibel]
-  url: http://chroma-glass.ucsd.edu/ubicomp2014_chroma.pdf
-  venue: UbiComp 2014
-  required: true
 - title: 'Functional, RF-Trilayer Sensors for Tooth-Mounted, Wireless Monitoring of the Oral Cavity and Food Consumption'
   authors: [Peter Tseng, Bradley Napier, Logan Garbarini, David L. Kaplan, and Fiorenzo G. Omenetto]
   url: https://onlinelibrary.wiley.com/doi/pdf/10.1002/adma.201703257
   venue: Advanced Materials 2018
+  required: true
+- title: 'Chroma: A Wearable Augmented-Reality Solution for Color Blindness'
+  authors: [Enrico Tanuwidjaja, Derek Huynh, Kirsten Koa, Calvin Nguyen, Churen Shao, Patrick Torbett, Colleen Emmenegger, Nadir Weibel]
+  url: http://chroma-glass.ucsd.edu/ubicomp2014_chroma.pdf
+  venue: UbiComp 2014
 ---
 <!-- - title: 'Glabella: Continuously Sensing Blood Pressure Behavior using an Unobtrusive Wearable Device'
   authors: [Christian Holz and Edward Wang]
