@@ -9,7 +9,7 @@ papers:
   required: true
 - title: 'Inferring Activities from Interactions with Objects'
   authors: [Matthai Philipose, Kenneth P. Fishkin, and Mike Perkowitz, Donald J. Patterson, Dieter Fox, Henry Kautz, Dirk Hahnel]
-  url: https://ftp.cs.rochester.edu/u/kautz/papers/pervasive_proact_final.pdf
+  url: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.127.3149&rep=rep1&type=pdf
   venue: PerCom 2004
 ---
 <!-- - title: 'Ensembles of Multiple Sensors for Human Energy Expenditure Estimation'
