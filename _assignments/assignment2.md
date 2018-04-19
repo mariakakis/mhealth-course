@@ -17,7 +17,8 @@ grading:
 <!-- extra_credit:
 - (+up to 10 points) Come up with your own set of gestures that your model can distinguish. The more complicated the gestures are, the more points you can earn. You can extend the duration of the gesture recording for different gestures.
 - (+5 points) Your demo can work on both yourself and one of the instructors. -->
-starting_materials: TODO
+starting_materials: |
+    Starter code: <a href="https://github.com/atm15/Assignment2Starter" target="_blank">link</a><br/>
 deliverables: |
     Source code (.zip, .tar, or GitHub link): <a href="https://canvas.uw.edu/courses/1131076/assignments/4143517" target="_blank">link</a><br/>
     In-class demo
