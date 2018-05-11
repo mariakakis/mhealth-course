@@ -4,7 +4,7 @@ due_class_index: 8
 papers:
 - title: 'Functional, RF-Trilayer Sensors for Tooth-Mounted, Wireless Monitoring of the Oral Cavity and Food Consumption'
   authors: [Peter Tseng, Bradley Napier, Logan Garbarini, David L. Kaplan, and Fiorenzo G. Omenetto]
-  url: https://onlinelibrary.wiley.com/doi/pdf/10.1002/adma.201703257
+  url: ../pdfs/toothpaper.pdf
   venue: Advanced Materials 2018
   required: true
 - title: 'Chroma: A Wearable Augmented-Reality Solution for Color Blindness'
