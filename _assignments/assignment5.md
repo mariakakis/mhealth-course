@@ -12,7 +12,7 @@ grading:
 - (+up to 10 points) Come up with your own set of gestures that your model can distinguish. The more complicated the gestures are, the more points you can earn. You can extend the duration of the gesture recording for different gestures.
 - (+5 points) Your demo can work on both yourself and one of the instructors. -->
 starting_materials: 
-	Link to BLE tutorial: <a href="https://learn.adafruit.com/circuit-playground-and-bluetooth-low-energy" target="_blank">link</a>
+    Link to BLE tutorial: <a href="https://learn.adafruit.com/circuit-playground-and-bluetooth-low-energy" target="_blank">link</a>
 deliverables: |
     Source code (.zip, .tar, or GitHub link): <a href="https://canvas.uw.edu/courses/1131076/assignments/4143525" target="_blank">link</a><br/>
     In-class demo
