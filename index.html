@@ -4,6 +4,12 @@ layout: default
 ---
 <div class="row">
   <div class="col-xs-12">
+<h1>Advanced Topics in Ubiquitous Computing</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
     <h2>Course Information</h2>
     <table style="width: 100%;" border="0">
       <tbody>
@@ -43,5 +49,107 @@ layout: default
     Occasional tutorials on necessary skills will be provided at the first half of the class-time (e.g., Android and Arduino programming). The rest of the class time will be used for discussions on the required readings. You are allowed to work in groups to learn the material, but are required to complete and submit individual work. 
 
     There are no pre-requisites for the course.
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+<h2>Schedule</h2>
+<!-- Course timing -->
+{% include course_dates.html %}
+
+{% assign sorted_readings = site.readings | sort: 'due_class_index' %}
+
+<table style="width: 100%;" border="0">
+  <colgroup>
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 50%;">
+       <col span="1" style="width: 20%;">
+       <col span="1" style="width: 15%;">
+    </colgroup>
+  <thead>
+    <tr>
+      <th><b>Date</b></th>
+      <th><b>Discussion Topic, Readings, and/or Videos</b></th>
+      <th><b>Lectures and Tutorials</b></th>
+      <th><b>Assignments</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for i in (0..class_date_list.size) %}
+      {% assign date = class_date_list[i] | strip %}
+      {% if date.size > 0 %}
+      <tr>
+        <!-- Date -->
+        <td>{{ date }}</td>
+
+        <!-- Current readings -->
+        <td>
+        {% assign curr_readings = "" %}
+        {% for readings in site.readings %}
+          {% if readings.due_class_index == i %}
+            {% assign curr_readings = readings %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% assign required_readings = curr_readings.papers | where:"required",true %}
+        {% assign optional_readings = curr_readings.papers | where_exp:"item","item.required != true" %}
+        <b>{{ curr_readings.title }}</b><br/><br/>
+
+        {% if required_readings.size > 0 %}
+        Required:
+        <ul>
+        {% for paper in required_readings %}
+          <li>
+            {% include citation.html paper=paper %}
+          </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% if optional_readings.size > 0 %}
+        Optional:
+        <ul>
+        {% for paper in optional_readings %}
+          <li>
+              {% include citation.html paper=paper %}
+          </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+        </td>
+
+        <!-- Lectures -->
+        <td>
+        {% for lecture in site.lectures %}
+          {% if lecture.class_index == i %}
+            {% if lecture.link.size > 0 %}
+              <a href="{{ lecture.link }}">{{ lecture.title }}</a><br/>
+            {% else %}
+              {{ lecture.title }}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        </td>
+
+        <td>
+        <!-- Due assignments -->
+        {% for assignment in site.assignments %}
+          {% if assignment.due_class_index == i %}
+            <a href="{{ site.baseurl }}{{ assignment.url }}">{{ assignment.nickname }}</a> due <br />
+          {% endif %}
+        {% endfor %}
+        <!-- New assignments -->
+        {% for assignment in site.assignments %}
+          {% if assignment.assigned_class_index == i %}
+            <a href="{{ site.baseurl }}{{ assignment.url }}">{{ assignment.nickname }}</a> assigned <br />
+          {% endif %}
+        {% endfor %}
+        </td>
+      </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
   </div>
 </div>
