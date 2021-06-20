@@ -1,5 +1,5 @@
 {% capture citation %}
-<u><a href="{{ include.paper.url }}" target="_blank">{{ include.paper.title }}</a></u><br/>
-{% include author_list.html authors=include.paper.authors %}{% if include.paper.venue.size > 0 %}, {{ include.paper.venue }}{% endif %}.
+<u><a href="{{ include.paper.url }}" target="_blank">{{ include.paper.title }}</a></u>;
+{% include author_list.html authors=include.paper.authors %}{% if include.paper.venue.size > 0 %} ({{ include.paper.venue }}){% endif %}
 {% endcapture %}
 {{ citation | strip_newlines }}

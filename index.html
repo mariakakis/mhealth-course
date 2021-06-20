@@ -4,7 +4,7 @@ layout: default
 ---
 <div class="row">
   <div class="col-xs-12">
-<h1>Advanced Topics in Ubiquitous Computing</h1>
+<h1>Advanced Topics in mHealth</h1>
   </div>
 </div>
 
@@ -12,27 +12,31 @@ layout: default
   <div class="col-xs-12">
     <h2>Course Information</h2>
     <table style="width: 100%;" border="0">
+      <colgroup>
+       <col span="1" style="width: 30%;">
+       <col span="1" style="width: 70%;">
+      </colgroup>
       <tbody>
         <tr>
           <td><b>Instructor</b></td>
-          <td>Alex Mariakakis (<a href="mailto:atm15@cs.washington.edu">email</a>)</td>
+          <td>Alex Mariakakis (<a href="mailto:mariakakis@cs.toronto.edu">email</a>)</td>
         </tr>
         <tr>
           <td><b>Instructor Office Hours</b></td>
-          <td>Saturdays, 4:00PM – 6:00PM (CSE 507)</td>
+          <td>TBD</td>
         </tr>
 
         <tr>
           <td><b>Teaching Assistant</b></td>
-          <td>Eric Whitmire (<a href="mailto:emwhit@cs.washington.edu">email</a>)</td>
+          <td>TBD</td>
         </tr>
         <tr>
           <td><b>Teaching Assistant Office Hours</b></td>
-          <td>Sundays, 12:00PM – 2:00PM (CSE 507)</td>
+          <td>TBD</td>
         </tr>
         <tr>
           <td><b>Course Time</b></td>
-          <td>Thursdays, 6:00PM – 8:50PM (EEB 003)</td>
+          <td>Fridays 2:00 PM – 4:00 PM (room TBD)</td>
         </tr>
       </tbody>
     </table>
@@ -42,13 +46,7 @@ layout: default
 <div class="row">
   <div class="col-xs-12">
     <h2>Course Description</h2>
-    The aim of this class will be to introduce you to ubiquitous computing (ubicomp). We will focus on how traditional topics of computing have evolved to support the vision of a connected, portable, and human-centric computing environment. Because ubicomp is an applied field, the course covers contributions across various fields: human-computer interaction, embedded computing, computer vision, distributed systems, machine learning, and electrical engineering. You will gain practical experience in developing sensing systems for activity recognition and gestural interaction. 
-
-    The course will be a combination of lectures, tutorials, class discussions, and demonstrations. You will be evaluated on your class participation, reading summaries, and individual assignments/mini-projects (6 assignments in total). 
-
-    Occasional tutorials on necessary skills will be provided at the first half of the class-time (e.g., Android and Arduino programming). The rest of the class time will be used for discussions on the required readings. You are allowed to work in groups to learn the material, but are required to complete and submit individual work. 
-
-    There are no pre-requisites for the course.
+    This course will examine the growing prominence of mobile health over the past twenty years. After briefly discussing various definitions of mobile health, we will focus our attention on how people are using the sensors embedded in ubiquitous and novel devices to capture indicators of physical and mental health. More specifically, we will study how sensors are being used to measure physiological signals, psychomotor function, and disease-specific symptoms. We will also explore the how human factors play an important role in these technologies. This course requires an undergraduate-level understanding of machine learning and programming, although familiarity with computer vision, signal processing, and human-computer interaction will also be beneficial. Beyond weekly readings, students will be expected to complete and present a course project at the end of the term.
   </div>
 </div>
 
@@ -58,70 +56,70 @@ layout: default
 <!-- Course timing -->
 {% include course_dates.html %}
 
-{% assign sorted_readings = site.readings | sort: 'due_class_index' %}
-
 <table style="width: 100%;" border="0">
   <colgroup>
-       <col span="1" style="width: 15%;">
-       <col span="1" style="width: 50%;">
-       <col span="1" style="width: 20%;">
-       <col span="1" style="width: 15%;">
-    </colgroup>
+   <col span="1" style="width: 13%;">
+   <col span="1" style="width: 67%;">
+   <col span="1" style="width: 20%;">
+  </colgroup>
   <thead>
     <tr>
       <th><b>Date</b></th>
-      <th><b>Discussion Topic, Readings, and/or Videos</b></th>
-      <th><b>Lectures and Tutorials</b></th>
-      <th><b>Assignments</b></th>
+      <th><b>Details</b></th>
+      <th><b>Project Deliverable</b></th>
     </tr>
   </thead>
   <tbody>
+    {% assign lectures = site.lectures | sort:'index' %}
     {% for i in (0..class_date_list.size) %}
+      <!-- Get the date and the corresponding lecture -->
       {% assign date = class_date_list[i] | strip %}
+      {% assign curr_lecture = lectures[i] %}
+
       {% if date.size > 0 %}
+
+      <!-- Extract the attributes of the lecture -->
+      {% assign presentations = curr_lecture.slides %}
+      {% assign required_readings = curr_lecture.readings | where:"required",true %}
+      {% assign optional_readings = curr_lecture.readings | where:"required",false %}
+      {% assign assignments = curr_lecture.assignments %}
+
       <tr>
         <!-- Date -->
         <td>{{ date }}</td>
 
-        <!-- Current readings -->
+        <!-- Content -->
         <td>
-        {% assign curr_readings = "" %}
-        {% for readings in site.readings %}
-          {% if readings.due_class_index == i %}
-            {% assign curr_readings = readings %}
-            {% break %}
-          {% endif %}
-        {% endfor %}
-        {% assign required_readings = curr_readings.papers | where:"required",true %}
-        {% assign optional_readings = curr_readings.papers | where_exp:"item","item.required != true" %}
-        <b>{{ curr_readings.title }}</b><br/><br/>
+        <b><u>{{ curr_lecture.title }}</u></b><br/>
 
-        {% if required_readings.size > 0 %}
-        Required:
         <ul>
-        {% for paper in required_readings %}
+        <!-- Presentation slides -->
+        {% for presentation in presentations %}
           <li>
-            {% include citation.html paper=paper %}
+            <b>Presentation:</b> <u><a href="{{presentation.url}}">{{presentation.title}}</a></u>
+          </li>
+        {% endfor %}
+        <!-- Required readings -->
+        {% for reading in required_readings %}
+          <li>
+            <b>Required Reading:</b> {% include citation.html paper=reading %}
+          </li>
+        {% endfor %}
+        <!-- Optional readings -->
+        {% for reading in optional_readings %}
+          <li>
+              <b>Optional Reading:</b> {% include citation.html paper=reading %}
           </li>
         {% endfor %}
         </ul>
-        {% endif %}
-
-        {% if optional_readings.size > 0 %}
-        Optional:
-        <ul>
-        {% for paper in optional_readings %}
-          <li>
-              {% include citation.html paper=paper %}
-          </li>
-        {% endfor %}
-        </ul>
-        {% endif %}
         </td>
 
-        <!-- Lectures -->
+        <!-- Project deliverables -->
         <td>
-        {% for lecture in site.lectures %}
+          {% for assignment in assignments %}
+            {{assignment}}
+          {% endfor %}
+        <!-- {% for lecture in site.lectures %}
           {% if lecture.class_index == i %}
             {% if lecture.link.size > 0 %}
               <a href="{{ lecture.link }}">{{ lecture.title }}</a><br/>
@@ -129,22 +127,7 @@ layout: default
               {{ lecture.title }}
             {% endif %}
           {% endif %}
-        {% endfor %}
-        </td>
-
-        <td>
-        <!-- Due assignments -->
-        {% for assignment in site.assignments %}
-          {% if assignment.due_class_index == i %}
-            <a href="{{ site.baseurl }}{{ assignment.url }}">{{ assignment.nickname }}</a> due <br />
-          {% endif %}
-        {% endfor %}
-        <!-- New assignments -->
-        {% for assignment in site.assignments %}
-          {% if assignment.assigned_class_index == i %}
-            <a href="{{ site.baseurl }}{{ assignment.url }}">{{ assignment.nickname }}</a> assigned <br />
-          {% endif %}
-        {% endfor %}
+        {% endfor %} -->
         </td>
       </tr>
       {% endif %}
