@@ -13,5 +13,5 @@ readings:
   venue: Landscape and Urban Planning 2019
   required: true
 assignments:
-- 1-page proposal
+- 2-page proposal
 ---

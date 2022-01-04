@@ -19,24 +19,20 @@ layout: default
       <tbody>
         <tr>
           <td><b>Instructor</b></td>
-          <td>Alex Mariakakis (<a href="mailto:mariakakis@cs.toronto.edu">email</a>)</td>
+          <td><a href="https://mariakakis.github.io/">Alex Mariakakis</a></td>
         </tr>
         <tr>
           <td><b>Instructor Office Hours</b></td>
-          <td>TBD</td>
+          <td>Monday 2:00 PM – 3:00 PM</td>
         </tr>
 
         <tr>
           <td><b>Teaching Assistant</b></td>
-          <td>TBD</td>
-        </tr>
-        <tr>
-          <td><b>Teaching Assistant Office Hours</b></td>
-          <td>TBD</td>
+          <td><a href="https://www.cs.toronto.edu/~minfanzh">Minfan Zhang</a></td>
         </tr>
         <tr>
           <td><b>Course Time</b></td>
-          <td>Fridays 2:00 PM – 4:00 PM (room TBD)</td>
+          <td>Friday 2:00 PM – 4:00 PM</td>
         </tr>
       </tbody>
     </table>
@@ -46,7 +42,7 @@ layout: default
 <div class="row">
   <div class="col-xs-12">
     <h2>Course Description</h2>
-    This course will examine the growing prominence of mobile health over the past twenty years. After briefly discussing various definitions of mobile health, we will focus our attention on how people are using the sensors embedded in ubiquitous and novel devices to capture indicators of physical and mental health. More specifically, we will study how sensors are being used to measure physiological signals, psychomotor function, and disease-specific symptoms. We will also explore the how human factors play an important role in these technologies. This course requires an undergraduate-level understanding of machine learning and programming, although familiarity with computer vision, signal processing, and human-computer interaction will also be beneficial. Beyond weekly readings, students will be expected to complete and present a course project at the end of the term.
+    <p>This course will examine the growing prominence of mobile health over the past twenty years. After briefly discussing various definitions of mobile health, we will focus our attention on how people are using the sensors embedded in ubiquitous and novel devices to capture indicators of physical and mental health. More specifically, we will study how sensors are being used to measure physiological signals, psychomotor function, and disease-specific symptoms. We will also explore the how human factors play an important role in these technologies. This course requires an undergraduate-level understanding of machine learning and programming, although familiarity with computer vision, signal processing, and human-computer interaction will also be beneficial. Beyond weekly readings and an in-class presentation, students will be expected to complete and present a course project at the end of the term.</p>
   </div>
 </div>
 
@@ -117,17 +113,8 @@ layout: default
         <!-- Project deliverables -->
         <td>
           {% for assignment in assignments %}
-            {{assignment}}
+            {{ assignment }}
           {% endfor %}
-        <!-- {% for lecture in site.lectures %}
-          {% if lecture.class_index == i %}
-            {% if lecture.link.size > 0 %}
-              <a href="{{ lecture.link }}">{{ lecture.title }}</a><br/>
-            {% else %}
-              {{ lecture.title }}
-            {% endif %}
-          {% endif %}
-        {% endfor %} -->
         </td>
       </tr>
       {% endif %}
