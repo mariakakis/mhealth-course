@@ -12,6 +12,4 @@ readings:
   url: https://doi.org/10.1016/j.landurbplan.2018.09.013
   venue: Landscape and Urban Planning 2019
   required: true
-assignments:
-- 2-page proposal
 ---

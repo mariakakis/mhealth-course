@@ -12,4 +12,6 @@ readings:
   url: https://doi.org/10.3389/fneur.2017.00096
   venue: Frontiers in Neurology 2017
   required: true
+assignments:
+- 2-page proposal
 ---
