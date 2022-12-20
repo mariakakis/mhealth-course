@@ -7,9 +7,9 @@ readings:
   url: https://doi.org/10.1145/2971648.2971740
   venue: UbiComp 2016
   required: true
-- title: 'Leveraging Collaborative-Filtering for Personalized Behavior Modeling: A Case Study of Depression Detection among College Students'
-  authors: [Xuhai Xu, Prerna Chikersal, Janine M. Dutcher, Yasaman S. Sefidgar, Woosuk Seo, Michael J. Tumminia, Daniella K. Villalba, Sheldon Cohen, Kasey G. Creswell, J. David Cresswell, Afsaneh Doryab, Paula S. Nurius, Eve Riskin, Anind K. Dey, Jennifer Mankoff]
-  url: https://doi.org/10.1145/3448107
-  venue: IMWUT 2021
+- title: 'Leveraging Routine Behavior and Contextually-Filtered Features for Depression Detection among College Students'
+  authors: [Xuhai Xu, Prerna Chikersal, Afsaneh Doryab, Daniella K. Villalba, Janine M. Dutcher, Michael J. Tumminia, Tim Althoff, Sheldon Cohen, Kasey G. Creswell, J. David Creswell, Jennifer Mankoff, Anind K. Dey]
+  url: https://doi.org/10.1145/3351274
+  venue: IMWUT 2019
   required: true
 ---
