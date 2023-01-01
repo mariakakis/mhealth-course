@@ -2,15 +2,14 @@
 title: 'Vital Signs'
 index: 5
 readings:
-- title: 'Remote Detection of Photoplethysmographic Systolic and Diastolic Peaks Using a Digital Camera'
-  authors: [Daniel McDuff, Sarah Gontarek, Rosalind W. Picard]
-  url: https://doi.org/10.1109/TBME.2014.2340991
-  venue: Transactions on Biomedical Engineering 2014
+- title: 'Transdermal Optical Imaging Revealed Different Spatiotemporal Patterns of Facial Cardiovascular Activities'
+  authors: [Jiangang Liu, Hong Luo, Paul Pu Zheng, Si Jia Wu, Kang Lee]
+  url: https://doi.org/10.1038/s41598-018-28804-0
+  venue: Scientific Reports 2018
   required: true
-- title: 'Smartphone-Based SpO<sub>2</sub> Measurement by Exploiting
-Wavelengths Separation and Chromophore Compensation'
+- title: 'Pho<sub>2</sub>: Smartphone based Blood Oxygen Level Measurement Systems using Near-IR and Red Wave-guided Light'
   authors: [Nam Bui, Anh Nguyen, Phuc Nguyen, Hoang Truong, Ashwin Ashok, Thang Dinh, Robin Deterding, Tam Vu]
-  url: https://doi.org/10.1145/3360725
-  venue: Transactions on Sensor Networks 2020
+  url: https://dl.acm.org/doi/pdf/10.1145/3131672.3131696
+  venue: SenSys 2017
   required: true
 ---
