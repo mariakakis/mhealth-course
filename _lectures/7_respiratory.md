@@ -14,5 +14,5 @@ Symptoms Using Smartphones'
   venue: UbiComp 2014
   required: true
 assignments:
-- 4-page progress report
+- 8-page progress report
 ---
