@@ -1,5 +1,5 @@
 ---
-title: 'Vital Signs'
+title: 'Circulatory Vital Signs'
 index: 5
 readings:
 - title: 'Transdermal Optical Imaging Revealed Different Spatiotemporal Patterns of Facial Cardiovascular Activities'
