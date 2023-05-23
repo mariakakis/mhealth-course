@@ -1,6 +1,9 @@
 ---
-title: 'Education & Reminders'
+title: 'Information Resources'
 index: 1
+slides:
+- title: 'Information Resources'
+  url: https://www.dropbox.com/s/98wfwof21zc7766/L1%20%E2%80%93%20Information%20Resources.pptx?dl=0
 readings:
 - title: 'E-IMCI: Improving Pediatric Health Care in Low-Income Countries'
   authors: [Brian DeRenzi, Neal Lesh, Tapan Parikh, Clayton Sims, Werner Maokla, Mwajuma Chemba, Yuna Hamisi, David S. Hellenberg, Marc Mitchell, Gaetano Borriello]

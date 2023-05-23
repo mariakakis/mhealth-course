@@ -1,6 +1,9 @@
 ---
 title: 'Mobility'
 index: 2
+slides:
+- title: 'Mobility'
+  url: https://www.dropbox.com/s/40z45hnwn44gk7l/L2%20%E2%80%93%20Mobility.pptx?dl=0
 readings:
 - title: 'Quantifying the Impact of Human Mobility on Malaria'
   authors: [Amy Wesolowski, Nathan Eagle, Andrew J. Tatem, David L. Smith, Abdisalan M. Noor, Robert W. Snow, Caroline O. Buckee]

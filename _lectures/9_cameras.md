@@ -1,6 +1,9 @@
 ---
 title: 'Cameras'
 index: 9
+slides:
+- title: 'Cameras'
+  url: https://www.dropbox.com/s/a2wk65kj3c6lqni/L9%20%E2%80%93%20Cameras.pptx?dl=0
 readings:
 - title: 'Transdermal Optical Imaging Revealed Different Spatiotemporal Patterns of Facial Cardiovascular Activities'
   authors: [Jiangang Liu, Hong Luo, Paul Pu Zheng, Si Jia Wu, Kang Lee]
