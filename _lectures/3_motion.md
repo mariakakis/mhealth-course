@@ -1,6 +1,7 @@
 ---
 title: 'Body Motion'
 index: 3
+slides:
 - title: 'Body Motion'
   url: https://www.dropbox.com/s/4adkgjlyskidkb3/L3%20%E2%80%93%20Body%20Motion.pptx?dl=0
 readings:
