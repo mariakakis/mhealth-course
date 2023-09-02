@@ -1,6 +1,6 @@
 ---
 title: 'Influenza-Like Illness'
-index: 8
+index: 7
 slides:
 - title: 'Influenza-Like Illness'
   url: https://www.dropbox.com/s/et2lj5oyi4kv60j/L8%20%E2%80%93%20Influenza-Like%20Illness.pptx?dl=0
