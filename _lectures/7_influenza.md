@@ -15,4 +15,6 @@ readings:
   url: https://www.nature.com/articles/s41598-022-07314-0
   venue: Nature Scientific Reports
   required: true
+assignments:
+- 8-page progress report
 ---
