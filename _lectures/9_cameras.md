@@ -15,4 +15,6 @@ readings:
   url: https://dl.acm.org/doi/pdf/10.1145/2632048.2632076
   venue: UbiComp 2014
   required: true
+assignments:
+- 8-page progress report (due Monday)
 ---
