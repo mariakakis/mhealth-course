@@ -16,5 +16,5 @@ readings:
   venue: UbiComp 2014
   required: true
 assignments:
-- 8-page progress report (due Monday)
+- Progress Report
 ---

@@ -16,5 +16,5 @@ readings:
   venue: PLOS ONE 2017
   required: true
 assignments:
-- 2-page proposal
+- Proposal
 ---
