@@ -3,7 +3,7 @@ title: 'Circulatory Vital Signs'
 index: 4
 slides:
 - title: 'Circulatory Vital Signs'
-  url: /slides/L4 – Circulatory Vital Signs.pptx
+  url: mhealth-course/slides/L4 – Circulatory Vital Signs.pptx
 readings:
 - title: 'hEARt: Motion-resilient Heart Rate Monitoring with In-ear Microphones'
   authors: [Kayla-Jade Butkow, Ting Dang, Andrea Ferlini, Dong Ma, Cecilia Mascolo]

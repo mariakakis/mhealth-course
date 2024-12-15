@@ -3,7 +3,7 @@ title: 'Mobility'
 index: 1
 slides:
 - title: 'Mobility'
-  url: /slides/L1 – Mobility.pptx
+  url: mhealth-course/slides/L1 – Mobility.pptx
 readings:
 - title: 'PocketCare: Tracking the Flu with Mobile Phones Using Partial Observations of Proximity and Symptoms'
   authors: [Wen Dong, Tong Guan, Bruno Lepri, Chunming Qiao]

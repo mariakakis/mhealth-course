@@ -3,7 +3,7 @@ title: 'Sleep'
 index: 3
 slides:
 - title: 'Sleep'
-  url: /slides/L3 – Sleep.pptx
+  url: mhealth-course/slides/L3 – Sleep.pptx
 readings:
 - title: "Toss 'N' Turn: Smartphone as Sleep
 and Sleep Quality Detector"
