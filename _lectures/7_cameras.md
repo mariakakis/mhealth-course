@@ -3,7 +3,7 @@ title: 'Cameras'
 index: 8
 slides:
 - title: 'Cameras'
-  url: https://www.dropbox.com/s/a2wk65kj3c6lqni/L7%20%E2%80%93%20Cameras.pptx?dl=0
+  url: /slides/L7 – Cameras.pptx
 readings:
 - title: 'Non-Contact, Automated Cardiac Pulse Measurements Using Video Imaging and Blind Source Separation'
   authors: [Ming-Zher Poh, Daniel J. McDuff, Rosalind W. Picard]
