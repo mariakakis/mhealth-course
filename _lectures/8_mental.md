@@ -3,7 +3,7 @@ title: 'Mental Health'
 index: 9
 slides:
 - title: 'Mental Health'
-  url: /slides/L8-MentalHealth.pptx
+  url: slides/L8-MentalHealth.pptx
 readings:
 - title: 'CrossCheck: Toward Passive Sensing and Detection of Mental Health Changes in People with Schizophrenia'
   authors: [Rui Wang, Min S.H. Aung, Saeed Abdullah, Rachel Brian, Andrew T. Cambpell, Tanzeem Choudhury, Marta Hauser, John Kane, Michael Merrill, Emily A. Scherer, Vincent W.S. Tseng, Dror Ben-Zeev]
