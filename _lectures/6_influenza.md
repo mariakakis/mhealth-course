@@ -3,7 +3,7 @@ title: 'Influenza-Like Illness'
 index: 6
 slides:
 - title: 'Influenza-Like Illness'
-  url: mhealth-course/slides/L6 – Influenza-Like Illness.pptx
+  url: mhealth-course/slides/L6-InfluenzaLikeIllness.pptx
 readings:
 - title: 'FluSense: A Contactless Syndromic Surveillance Platform for Influenza-Like Illness in Hospital Waiting Areas'
   authors: [Forsad Al Hossain, Andrew A. Lover, George A. Corey, Nicholas G. Reich, Tauhidur Rahman]
