@@ -8,6 +8,10 @@ title: mHealth Course
 # Short bio or description (displayed in the header)
 description: Alex Mariakakis' mHealth course
 
+# You'll want to customize url and baseurl for your own site:
+# baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
+url: "https://mariakakis.github.io/mhealth-course" # the base hostname & protocol for your site
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars1.githubusercontent.com/u/9437612?v=3&s=200
 
