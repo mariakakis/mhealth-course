@@ -3,7 +3,7 @@ title: 'Body Motion'
 index: 2
 slides:
 - title: 'Body Motion'
-  url: mhealth-course/slides/L2-BodyMotion.pptx
+  url: /slides/L2-BodyMotion.pptx
 readings:
 - title: 'Is Every-Day Walking in Older Adults More Analogous to Dual-task Walking or to Usual Walking? Elucidating the Gaps Between Gait Performance in the Lab and During 24/7 Monitoring'
   authors: [Inbar Hillel, Eran Gazit, Alice Nieuwboer, Laura Avanzino, Lynn Rochester, Andrea Cereatti, Ugo Della Croce, Marcel Olde Rikkert, Bastiaan R. Bloem, Elisa Pelosin, Silvia Del Din, Pieter Ginis, Nir Giladi, Anat Mirelman, Jeffrey M. Hausdorff]

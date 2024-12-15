@@ -3,7 +3,7 @@ title: 'Respiratory Health'
 index: 5
 slides:
 - title: 'Respiratory Health'
-  url: mhealth-course/slides/L5-RespiratoryHealth.pptx
+  url: /slides/L5-RespiratoryHealth.pptx
 readings:
 - title: 'SpiroSmart: Using a Microphone to Measure Lung Function on a Mobile Phone'
   authors: [Eric C. Larson, Mayank Goel, Gaetano Boriello, Sonya Heltshe, Margaret Rosenfeld, and Shwetak N. Patel]
