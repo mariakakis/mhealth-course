@@ -3,7 +3,7 @@ title: 'Just-In-Time Interventions'
 index: 10
 slides:
 - title: 'Just-In-Time Interventions'
-  url: slides/L9-JITAIs.pptx
+  url: slides/L9-JITAIs.pdf
 readings:
 - title: 'A Mobile Just-in-Time Adaptive Intervention for Smoking Cessation: Pilot Randomized Controlled Trial'
   authors: [Emily T Hébert, Chaelin K Ra, Adam C Alexander, Angela Helt, Rachel Moisiuc, Darla E Kendzor, Damon J Vidrine, Rachel K Funk-Lawler, Michael S Businelle]
