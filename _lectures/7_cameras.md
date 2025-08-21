@@ -1,6 +1,6 @@
 ---
 title: 'Cameras'
-index: 8
+index: 7
 slides:
 - title: 'Cameras'
   url: slides/L7-Cameras.pdf
@@ -15,4 +15,6 @@ readings:
   url: https://dl.acm.org/doi/pdf/10.1145/2632048.2632076
   venue: UbiComp 2014
   required: true
+assignments:
+- Progress Report
 ---

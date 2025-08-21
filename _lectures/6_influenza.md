@@ -1,6 +1,6 @@
 ---
 title: 'Influenza-Like Illness'
-index: 7
+index: 6
 slides:
 - title: 'Influenza-Like Illness'
   url: slides/L6-InfluenzaLikeIllness.pdf
@@ -15,6 +15,4 @@ readings:
   url: https://www.nature.com/articles/s41598-022-07314-0
   venue: Nature Scientific Reports
   required: true
-assignments:
-- Progress Report
 ---
