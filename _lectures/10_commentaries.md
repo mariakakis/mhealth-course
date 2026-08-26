@@ -1,6 +1,5 @@
 ---
 title: 'Commentaries on Mobile Health'
-index: 11
 readings:
 - title: 'The Emerging Field of Mobile Health'
   authors: [Steven R. Steinhubl, Evan D. Muse, Eric J. Topol]

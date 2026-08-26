@@ -25,18 +25,17 @@ layout: default
           <td><b>Instructor Office Hours</b></td>
           <td>By appointment via email</td>
         </tr>
-
-        <tr>
+       <!--  <tr>
           <td><b>Teaching Assistant</b></td>
           <td><a href="https://www.sejalbhalla.com/">Sejal Bhalla</a></td>
-        </tr>
+        </tr> -->
         <tr>
           <td><b>Course Time</b></td>
-          <td>Friday 3:00 PM – 5:00 PM</td>
+          <td>Wednesday 3:00 PM – 5:00 PM</td>
         </tr>
         <tr>
           <td><b>Course Location</b></td>
-          <td>MY 430</td>
+          <td>Lawson Centre for Sustainability, Room 1013</td>
         </tr>
       </tbody>
     </table>
@@ -70,11 +69,18 @@ layout: default
     </tr>
   </thead>
   <tbody>
-    {% assign lectures = site.lectures | sort:'index' %}
     {% for i in (0..class_date_list.size) %}
       <!-- Get the date and the corresponding lecture -->
       {% assign date = class_date_list[i] | strip %}
-      {% assign curr_lecture = lectures[i] %}
+      {% assign slug = site.data.lecture_config.lecture_order[i] %}
+      {% assign target_url = "/lectures/" | append: slug | append: "/" %}
+      {% assign curr_lecture = nil %}
+      {% for lecture in site.lectures %}
+        {% if lecture.url == target_url %}
+          {% assign curr_lecture = lecture %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
 
       {% if date.size > 0 %}
 
@@ -127,3 +133,4 @@ layout: default
 </table>
   </div>
 </div>
+<br/>

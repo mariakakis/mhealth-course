@@ -1,6 +1,5 @@
 ---
 title: 'Respiratory Health'
-index: 5
 slides:
 - title: 'Respiratory Health'
   url: slides/L5-RespiratoryHealth.pdf

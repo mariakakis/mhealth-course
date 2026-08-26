@@ -1,6 +1,5 @@
 ---
 title: 'Sleep'
-index: 3
 slides:
 - title: 'Sleep'
   url: slides/L3-Sleep.pdf

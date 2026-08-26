@@ -1,6 +1,5 @@
 ---
 title: 'Mental Health'
-index: 9
 slides:
 - title: 'Mental Health'
   url: slides/L8-MentalHealth.pdf

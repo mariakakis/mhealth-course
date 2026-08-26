@@ -1,12 +1,12 @@
-{% assign start_date = "2025-9-2" %}
-{% assign end_date = "2025-12-5" %}
-{% assign on_sun = false %}
-{% assign on_mon = false %}
-{% assign on_tue = false %}
-{% assign on_wed = false %}
-{% assign on_thu = false %}
-{% assign on_fri = true %}
-{% assign on_sat = false %}
+{% assign start_date = site.data.lecture_config.course_dates.start_date %}
+{% assign end_date = site.data.lecture_config.course_dates.end_date %}
+{% assign on_sun = site.data.lecture_config.course_dates.on_sun %}
+{% assign on_mon = site.data.lecture_config.course_dates.on_mon %}
+{% assign on_tue = site.data.lecture_config.course_dates.on_tue %}
+{% assign on_wed = site.data.lecture_config.course_dates.on_wed %}
+{% assign on_thu = site.data.lecture_config.course_dates.on_thu %}
+{% assign on_fri = site.data.lecture_config.course_dates.on_fri %}
+{% assign on_sat = site.data.lecture_config.course_dates.on_sat %}
 {% assign curr_date = start_date %}
 
 {% capture class_date_list_string %}

@@ -1,6 +1,5 @@
 ---
 title: 'Just-In-Time Interventions'
-index: 10
 slides:
 - title: 'Just-In-Time Interventions'
   url: slides/L9-JITAIs.pdf

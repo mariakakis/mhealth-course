@@ -1,6 +1,5 @@
 ---
 title: 'Influenza-Like Illness'
-index: 6
 slides:
 - title: 'Influenza-Like Illness'
   url: slides/L6-InfluenzaLikeIllness.pdf

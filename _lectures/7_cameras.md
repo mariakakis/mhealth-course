@@ -1,6 +1,5 @@
 ---
 title: 'Cameras'
-index: 7
 slides:
 - title: 'Cameras'
   url: slides/L7-Cameras.pdf

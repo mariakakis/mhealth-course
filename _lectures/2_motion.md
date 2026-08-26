@@ -1,6 +1,5 @@
 ---
 title: 'Body Motion'
-index: 2
 slides:
 - title: 'Body Motion'
   url: slides/L2-BodyMotion.pdf

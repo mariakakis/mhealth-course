@@ -1,6 +1,5 @@
 ---
 title: 'Circulatory Vital Signs'
-index: 4
 slides:
 - title: 'Circulatory Vital Signs'
   url: slides/L4-CirculatoryVitalSigns.pdf

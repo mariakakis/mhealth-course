@@ -1,6 +1,5 @@
 ---
 title: 'Mobility'
-index: 1
 slides:
 - title: 'Mobility'
   url: slides/L1-Mobility.pdf
