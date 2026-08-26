@@ -1,0 +1,26 @@
+course_dates:
+  start_date: "2026-9-8"
+  end_date: "2026-12-3"
+  on_sun: false
+  on_mon: false
+  on_tue: false
+  on_wed: true
+  on_thu: false
+  on_fri: false
+  on_sat: false
+
+lecture_order:
+- 0_intro
+- 1_mobility
+- 2_motion
+- 3_sleep
+- 4_blood
+- 5_respiratory
+- 6_influenza
+- reading
+- 7_cameras
+- 8_mental
+- 9_jitais
+- 10_commentaries
+- presentations
+- reports
