@@ -4,14 +4,14 @@ title: 'Sleep'
 # - title: 'Sleep'
 #   url: slides/L3-Sleep.pdf
 readings:
+- title: "Toss 'n' Turn: Smartphone as Sleep and Sleep Quality Detector"
+  authors: [Jun-Ki Min, Afsaneh Doryab, Jason Wiese, Shahriyar Amini, John Zimmerman, Jason I. Hong]
+  url: https://dl.acm.org/doi/abs/10.1145/2556288.2557220
+  venue: CHI 2014
+  required: true
 - title: 'Contactless Sleep Apnea Detection on Smartphones'
   authors: [Rajalakshmi Nandakumar, Shyamnath Gollakota, Nathaniel Watson]
   url: https://dl.acm.org/doi/pdf/10.1145/2742647.2742674
   venue: MobiSys 2015
-  required: true
-- title: 'My Pillow Knows My Sleep: Sleep Monitoring with Computational Fabrics in the Pillowcase'
-  authors: [Qijia Shao, Junxiao Chen, Ho Man Colman Leung, Meiqi Zhao, Ruoyu Xu, Jiting Liu, Lisa Maria DiSalvo García, Xiaofan Jiang, Marie-Pierre St-Onge, Xia Zhou]
-  url: https://dl.acm.org/doi/10.1145/3749550
-  venue: IMWUT 2025
   required: true
 ---
