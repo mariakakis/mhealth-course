@@ -1,5 +1,5 @@
 ---
-title: 'Neurodegenerative Disorders'
+title: 'Neurodegenerative Diseases'
 # slides:
 # - title: 'Cameras'
 #   url: slides/L7-Cameras.pdf
