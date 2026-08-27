@@ -1,8 +1,8 @@
 ---
 title: 'Circulatory Vital Signs'
-slides:
-- title: 'Circulatory Vital Signs'
-  url: slides/L4-CirculatoryVitalSigns.pdf
+# slides:
+# - title: 'Circulatory Vital Signs'
+#   url: slides/L4-CirculatoryVitalSigns.pdf
 readings:
 - title: 'hEARt: Motion-resilient Heart Rate Monitoring with In-ear Microphones'
   authors: [Kayla-Jade Butkow, Ting Dang, Andrea Ferlini, Dong Ma, Cecilia Mascolo]

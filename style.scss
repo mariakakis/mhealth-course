@@ -105,16 +105,28 @@ img {
   max-width: 100%;
 }
 
+.container {
+    max-width: 1400px;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin-top: 1em;
 }
 
 td, th {
     border: 1px solid #000000;
     text-align: left;
     padding: 8px;
+}
+
+th {
+    background-color: $darkerGray;
+    color: $white;
+    border-color: $darkerGray;
+    font-weight: bold;
 }
 
 tr:nth-child(even) {

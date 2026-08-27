@@ -16,13 +16,19 @@ layout: default
        <col span="1" style="width: 30%;">
        <col span="1" style="width: 70%;">
       </colgroup>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Details</th>
+        </tr>
+      </thead>
       <tbody>
         <tr>
-          <td><b>Instructor</b></td>
+          <td>Instructor</td>
           <td><a href="https://mariakakis.github.io/">Alex Mariakakis</a></td>
         </tr>
         <tr>
-          <td><b>Instructor Office Hours</b></td>
+          <td>Instructor Office Hours</td>
           <td>By appointment via email</td>
         </tr>
        <!--  <tr>
@@ -30,11 +36,11 @@ layout: default
           <td><a href="https://www.sejalbhalla.com/">Sejal Bhalla</a></td>
         </tr> -->
         <tr>
-          <td><b>Course Time</b></td>
+          <td>Course Time</td>
           <td>Wednesday 3:00 PM – 5:00 PM</td>
         </tr>
         <tr>
-          <td><b>Course Location</b></td>
+          <td>Course Location</td>
           <td>Lawson Centre for Sustainability, Room 1013</td>
         </tr>
       </tbody>
@@ -63,9 +69,9 @@ layout: default
   </colgroup>
   <thead>
     <tr>
-      <th><b>Date</b></th>
-      <th><b>Details</b></th>
-      <th><b>Project Deliverable</b></th>
+      <th>Date</th>
+      <th>Details</th>
+      <th>Project Deliverable</th>
     </tr>
   </thead>
   <tbody>
@@ -88,7 +94,12 @@ layout: default
       {% assign presentations = curr_lecture.slides %}
       {% assign required_readings = curr_lecture.readings | where:"required",true %}
       {% assign optional_readings = curr_lecture.readings | where:"required",false %}
-      {% assign assignments = curr_lecture.assignments %}
+      {% assign assignment = "" %}
+      {% for entry in site.data.lecture_config.assignments %}
+        {% if entry[1] == slug %}
+          {% assign assignment = entry[0] %}
+        {% endif %}
+      {% endfor %}
 
       <tr>
         <!-- Date -->
@@ -122,9 +133,7 @@ layout: default
 
         <!-- Project deliverables -->
         <td>
-          {% for assignment in assignments %}
-            {{ assignment }}
-          {% endfor %}
+          {{ assignment }}
         </td>
       </tr>
       {% endif %}

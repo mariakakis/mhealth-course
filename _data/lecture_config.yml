@@ -1,26 +1,26 @@
 course_dates:
   start_date: "2026-9-8"
-  end_date: "2026-12-3"
-  on_sun: false
-  on_mon: false
-  on_tue: false
-  on_wed: true
-  on_thu: false
-  on_fri: false
-  on_sat: false
+  end_date: "2026-12-10"
+  day: "Wed"
 
 lecture_order:
 - 0_intro
-- 1_mobility
-- 2_motion
-- 3_sleep
-- 4_blood
-- 5_respiratory
-- 6_influenza
+- 1_vitals
+- 2_glucose
+- 3_respiratory
+- 4_influenza
+- 5_sleep
+- 6_neonatal
 - reading
-- 7_cameras
+- 7_neurodegen
 - 8_mental
-- 9_jitais
+- 9_foundations
 - 10_commentaries
-- presentations
-- reports
+- 11_presentations
+- 12_reports
+
+assignments:
+  Proposal: 2_glucose
+  Progress Report: 7_neurodegen
+  Final Presentation: presentations
+  Final Report: reports

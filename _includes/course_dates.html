@@ -1,39 +1,21 @@
 {% assign start_date = site.data.lecture_config.course_dates.start_date %}
 {% assign end_date = site.data.lecture_config.course_dates.end_date %}
-{% assign on_sun = site.data.lecture_config.course_dates.on_sun %}
-{% assign on_mon = site.data.lecture_config.course_dates.on_mon %}
-{% assign on_tue = site.data.lecture_config.course_dates.on_tue %}
-{% assign on_wed = site.data.lecture_config.course_dates.on_wed %}
-{% assign on_thu = site.data.lecture_config.course_dates.on_thu %}
-{% assign on_fri = site.data.lecture_config.course_dates.on_fri %}
-{% assign on_sat = site.data.lecture_config.course_dates.on_sat %}
+{% assign day = site.data.lecture_config.course_dates.day %}
 {% assign curr_date = start_date %}
 
 {% capture class_date_list_string %}
 {% for i in (1..180) %}
-	{% assign next_unix = curr_date | date: "%s" | plus: 86400 %}
-	{% assign next_date = next_unix | date: "%a %h %d, %Y" %}
-	{% assign next_date_split = next_date | split:' ' %}
-	{% assign end_unix = end_date | date: "%s" | plus: 0 %}
-	{% if next_unix > end_unix %} 
-		{% break %}
-	{% endif %}
-	{% if (next_date_split[0] == 'Sun' and on_sun) %}
-		{{ next_date }};
-	{% elsif (next_date_split[0] == 'Mon' and on_mon) %}
-		{{ next_date }};
-	{% elsif (next_date_split[0] == 'Tue' and on_tue) %}
-		{{ next_date }};
-	{% elsif (next_date_split[0] == 'Wed' and on_wed) %}
-		{{ next_date }};
-	{% elsif (next_date_split[0] == 'Thu' and on_thu) %}
-		{{ next_date }};
-	{% elsif (next_date_split[0] == 'Fri' and on_fri) %}
-		{{ next_date }};
-	{% elsif (next_date_split[0] == 'Sat' and on_sat) %}
-		{{ next_date }};
-	{% endif %}
-	{% assign curr_date = next_unix %}
+  {% assign next_unix = curr_date | date: "%s" | plus: 86400 %}
+  {% assign next_date = next_unix | date: "%-d" %}
+  {% assign next_day = next_unix | date: "%a" %}
+  {% assign end_unix = end_date | date: "%s" | plus: 0 %}
+  {% if next_unix > end_unix %}
+    {% break %}
+  {% endif %}
+  {% if next_day == day %}
+    {{ next_unix | date: "%b %-d" }};
+  {% endif %}
+  {% assign curr_date = next_unix %}
 {% endfor %}
 {% endcapture %}
 {% assign class_date_list = class_date_list_string | split:';' %}
