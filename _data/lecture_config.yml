@@ -22,5 +22,5 @@ lecture_order:
 assignments:
   Proposal: 2_glucose
   Progress Report: 7_neurodegen
-  Final Presentation: presentations
-  Final Report: reports
+  Final Presentation: 11_presentations
+  Final Report: 12_reports
