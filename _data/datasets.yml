@@ -1,0 +1,50 @@
+- category: General Repositories
+  datasets:
+    - name: All of Us
+      url: https://www.researchallofus.org/data-tools/workbench/
+      description: Large US cohort with EHR, genomics, and wearables
+    - name: PhysioNet
+      url: https://physionet.org/
+      description: Open repository of physiological signals
+    - name: Health Data Nexus
+      url: https://healthdatanexus.ai/
+      description: Canadian-hosted repository of physiological signals
+    - name: UCI Machine Learning Repository
+      url: https://archive.ics.uci.edu/
+      description: General ML datasets (search activity or smartphone)
+
+- category: Behavioral & Mental Health
+  datasets:
+    - name: GLOBEM
+      url: https://the-globem.github.io/
+      description: Multi-year phone and wearable data for depression monitoring
+    - name: College Experience
+      url: https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset
+      description: Multi-year phone and wearable data for depression monitoring
+    - name: DiversityOne
+      url: https://datascientia.disi.unitn.it/projects/diversityone/
+      description: Multi-country phone sensing of daily life
+
+- category: Physiological & Audio
+  datasets:
+    - name: PPG-Sport
+      url: https://github.com/LaserHu/PPG-Sport
+      description: Wrist PPG with motion artifacts during sports
+    - name: WildPPG
+      url: https://siplab.org/projects/WildPPG
+      description: Wrist PPG with motion artifacts in daily life
+    - name: MESA
+      url: https://sleepdata.org/datasets/mesa
+      description: Polysomnography and actigraphy in sleep cohort
+    - name: COUGHVID
+      url: https://c4science.ch/diffusion/10770/
+      description: Crowdsourced cough audio for COVID detection
+
+- category: Instructor-Owned
+  datasets:
+    - name: Auricle
+      url: https://physionet.org/content/auricle/1.0.0/
+      description: Wearable cardiovascular signals including in-ear cardiac audio
+    - name: mcPHASES
+      url: https://physionet.org/content/mcphases/1.0.0/
+      description: Wearable and hormone data for menstrual cycle tracking

@@ -208,23 +208,33 @@ title:
     </ul>
 
     If you are stuck trying to come up with an idea, the following resources and datasets may be helpful:
-    <ul>
-      <li>T-CAIREM: <a href="https://tcairem.utoronto.ca/collaboration-hub">Collaboration Hub</a></li>
-      <li>T-CAIREM: <a href="https://healthdatanexus.ai/">Health Data Nexus</a></li>
-      <li>NIH: <a href="https://www.researchallofus.org/data-tools/workbench/">All of Us</a></li>
-      <li>PhysioNet: <a href="https://physionet.org/">Datasets and Challenges</a></li>
-      <li>University of Washington: <a href="https://the-globem.github.io/">GLOBEM Dataset</a></li>
-      <li>University of Trento: <a href="https://datascientia.disi.unitn.it/projects/diversityone/">DiversityOne Dataset</a></li>
-      <li>ETH Zurich: <a href="https://siplab.org/projects/WildPPG">WildPPG</a></li>
-      <li>University of California – Irvine: <a href="https://archive.ics.uci.edu/">Machine Learning Repository</a> (search "activity" or "smartphone")
-      <li>Dartmouth College: <a href="https://www.kaggle.com/datasets/subigyanepal/college-experience-dataset">College Experience Dataset</a></li>
-      <li>Harvard: <a href="https://sleepdata.org/datasets/mesa">Multi-Ethnic Study of Atherosclerosis (MESA) Sleep Dataset</a></li>
-      <li>EPFL: <a href="https://c4science.ch/diffusion/10770/">COUGHVID Dataset</a></li>  
-    </ul> 
+    <table style="border-collapse: collapse; width: 100%;" border="1">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Dataset</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for group in site.data.datasets %}
+          {% assign row_count = group.datasets.size %}
+          {% for dataset in group.datasets %}
+        <tr>
+            {% if forloop.first %}
+          <td rowspan="{{ row_count }}">{{ group.category }}</td>
+            {% endif %}
+          <td><a href="{{ dataset.url }}">{{ dataset.name }}</a></td>
+          <td>{{ dataset.description }}</td>
+        </tr>
+          {% endfor %}
+        {% endfor %}
+      </tbody>
+    </table>
 
     There will be deliverables throughout the semester to ensure that your group is making sufficient progress on your project:
     <ol>
-      <li><b>Proposal</b>: A document proposing your idea and your execution plan (1–3 pages)</li>
+      <li><b>Proposal</b>: A document proposing your idea and your execution plan (2–3 pages)</li>
       <li><b>Progress Report</b>: A document describing your progress halfway through the semester (6–8 pages)</li>
       <li><b>Final Presentation</b>: A presentation summarizing your project (~10 minutes)</li>
       <li><b>Final Report</b>: A document akin to a journal or conference submission (10-14 pages)</li>
